@@ -1,7 +1,10 @@
 *.py[cod]
 
+test.txt
+
 # C extensions
 *.so
+*.out
 
 # Packages
 *.egg
