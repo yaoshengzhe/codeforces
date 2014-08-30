@@ -7,3 +7,8 @@
 
 * 算法：逐个检查
 * 难点：无
+
+## [391A Genetic Engineering](391A_Genetic_Engineering/Solution.c)
+
+* 算法：如果有奇数个连续相同的字符则加一
+* 难点：循环后不要忘记处理最后一个连续字符串
