@@ -26,3 +26,8 @@
     1. a == b 时要输出infinity
     2. 数因数的时候，要从1开始到sqrt(a-b)，所以复杂度是O(sqrt(a-b))
     3. 如果遇到c*c = a-b并且c > b的情况，只能算一个
+
+## [496A Minimum Difficulty](496A_Minimum_Difficulty/Solution.cc)
+
+* 算法：扫一遍，得到相邻两数的最大间距x，以及如果删除a[i], a[i+1] - a[i-1]的最小值y。max(x, y)即为解。
+* 难点：想清楚就行，很简单。
