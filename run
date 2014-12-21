@@ -1,0 +1,9 @@
+#! /bin/bash
+
+PROG=`ls $1* | grep -v test`
+TEST=$1.test
+
+set -e
+
+g++ $PROG -o a.out
+./a.out < $TEST
