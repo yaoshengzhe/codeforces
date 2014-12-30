@@ -54,6 +54,14 @@
     2. 在bsearch时，要找lower bound，因为一位选手可能赢得当前局后，很久没赢球，用一般bsearch所得结果错误
     3. 如果set确定后，那么赢得最后一场胜利的选手应该是最后赢家(否则比赛早就应该提前结束)。一种解决方法是，如果还有比赛没考虑，那么设s为当前赢球多的选手的set + 1。当考虑完最后一场时，其中一方赢球场数必须等于以上值。
 
+## [496E Distributing Parts](496E_Distributing_Parts/Solution.cc)
+
+* 算法：将Note和Actor放在一起按开始时间排序。如果遇到Note和Actor开始时间相同的情况，将Actor放在前面(Note和Note, Actor和Actor之间顺序随意，可以按照他们的id)。定义一个actor set, 该set会将里面的actor按结束时间排序。扫一遍排完序的数组，如果遇到actor，放进actor set里。如果遇到Note, 在actor set找到大于等于该Note结束时间的actors中拥有最小结束时间的actor。将该actor的k减一。如果该actor的k变为0，则从actor set中删除。对于某次操作，如果actor set中找不到合适的actor，则结束，输出NO。否则，输出结果。
+* 难点：
+
+    1. 上述算法很巧妙的利用了排序（线段树可能可以做，但没有上述方法简单）
+    2. 如果用C/C++，要用multiset，排序中的comparator必须实现严格less，64位数可以用<inttypes.h>
+
 ## [499A Watching a movie](499A_Watching_a_movie/Solution.cc)
 
 * 算法：如果当前位置为t, 那么跳到下一个精彩时刻[a, b]所需要看的时间为(a - t) % x；加上本身观看时间b - a + 1，所以对于每一组输入，需要观看(a - t) % x + b - a + 1。全部之和即为答案
