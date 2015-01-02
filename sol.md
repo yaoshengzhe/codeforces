@@ -71,3 +71,8 @@
 
 * 算法：用一个map保存每个单词所对应的笔记单词，然后查询map就行
 * 难点：string和map操作，不过如果用C++会很简单
+
+## [500A New Year Transportation](500A_New_Year_Transportation/Solution.cc)
+
+* 算法：用一个visited数组记录哪些cell已经被访问过。从第一个cell开始，一个一个跳，如果跳到访问过的cell则输出NO。否则如果跳到了正确的cell，则输出YES
+* 难点：无
