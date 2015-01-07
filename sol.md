@@ -1,3 +1,8 @@
+## [001A Theatre Square](001A_Theatre_Square/Solution.cc)
+
+* 算法：简单算数，先看每行至少要几个。然后看每列要几个，之积即为结果。
+* 难点：无
+
 ## [391A Genetic Engineering](391A_Genetic_Engineering/Solution.c)
 
 * 算法：如果有奇数个连续相同的字符则加一
