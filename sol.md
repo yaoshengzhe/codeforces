@@ -109,3 +109,8 @@
 
 * 算法：直接计算分数比较
 * 难点：无
+
+## [501B Misha and Changing Handles](501B_Misha_and_Changing_Handles/Solution.cc)
+
+* 算法：用两个map保存记录。一个map保存最原始的id到现在最新名字，一个保存所有中间用过的名字到最一开始的名字。扫完后，输出第一个map的内容即可。
+* 难点：无
