@@ -1,6 +1,6 @@
 // A union-find algorithm implementation
 
-int uf_find(int *uf, int x) {
+int ufFind(int *uf, int x) {
     while (uf[x] != x) {
         int parent = uf[x];
         uf[x] = uf[parent];
@@ -9,7 +9,7 @@ int uf_find(int *uf, int x) {
     return x;
 }
 
-void uf_union(int *uf, int x, int y) {
+void ufUnion(int *uf, int x, int y) {
     int rootx = uf_find(uf, x);
     int rooty = uf_find(uf, y);
     if (rootx < rooty) {
