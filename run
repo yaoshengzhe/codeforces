@@ -1,6 +1,6 @@
 #! /bin/bash
 
-PROG=`ls $1/* | grep -v test`
+PROG=`ls $1/* | grep -v "\.test$"`
 TEST=$1/tmp.test
 
 set -e
