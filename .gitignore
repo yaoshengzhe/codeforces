@@ -62,3 +62,6 @@ nosetests.xml
 .pydevproject
 
 *.test
+
+# CodeForces test input dir.
+inputs/
